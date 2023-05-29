@@ -56,6 +56,7 @@ const Login = (props) => {
   const { isValid: emailIsValid } = emailState;
   const { isValid: passwordIsValid } = passwordState;
 
+  // neat way to fire setting state after 500ms instead of on every character (onChange)
   useEffect(() => {
     const identifier = setTimeout(() => {
       console.log('Checking form validity!');
